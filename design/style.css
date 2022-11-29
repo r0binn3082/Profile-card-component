@@ -83,3 +83,6 @@ body{
 .followers, .likes, .photos{
     flex-grow: 1;
 }
+hr{
+    color:var(--Dark-gray);
+}
