@@ -1,0 +1,85 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+    font-family: Kumbh Sans ;
+}
+.circle1{
+    position: absolute;
+    height: 70rem;
+    width: 70rem;
+    top: -45rem;
+    left: -20rem;
+    border-radius: 50%;
+    background: linear-gradient(
+        cyan 40%,
+        var(--Dark-cyan) 100%
+    );
+    padding: 0;
+    z-index: 0;
+}
+.circle2{
+    position: relative;
+    height: 50rem;
+    width: 50rem;
+    background: linear-gradient(
+        90deg,
+        cyan,
+        var(--Dark-cyan) 85%
+    );
+    border-radius: 50%;
+    right: -43rem;
+    bottom: -20rem; 
+     padding: 0;
+     z-index: 0;
+}
+.card{
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    width: 21.9rem;
+    height: 23rem;
+    right: 475px;
+    top: 175px;
+    z-index: 1;
+}
+.head img{
+    border-radius: 15px 15px 0 0;
+}
+.img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: -50px;
+    width: fit-content;
+}
+.img img{
+    border-radius: 50%;
+    display: block;
+    border: solid white 5px;
+}
+.card-body{
+    bottom: 65px;
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+}
+.bolded{
+    font-weight: 700;
+    color: black;
+}
+.norm{
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+.info{
+    display:flex;
+}
+.followers, .likes, .photos{
+    flex-grow: 1;
+}
